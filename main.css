@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    margin: 5%;
+    padding: 6%;
+    background-color: #1F2630;
+    border-radius: 15px;
+}
+
+main .submitScreen img{
+    background-color: #2C3740;
+    margin: 0 0 3%;
+    padding: 4%;
+    border-radius: 100%;
+    
+}
+
+main .submitScreen h1{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 4%;
+}
+
+main p, main span{
+    color: hsl(217, 12%, 63%);
+}
+
+main p{
+    margin-bottom: 8%;
+}
+
+main .ratingBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+main .ratingBox span{
+    padding: 5%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background-color: #2C3740;
+    border-radius: 100%;
+    transition: background-color 0.2s;
+}
+
+main .ratingBox span:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
+
+main .ratingBox span.active{
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+}
+
+main button{
+    width: 100%;
+    padding: 3.5% 0 3%;
+    background-color: hsl(25, 97%, 53%);
+    font: 16px 'Overpass', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2;
+}
+
+main .submitScreen small{
+    color: hsl(25, 97%, 53%);
+    font-family: 'Overpass', sans-serif;
+}
+
+main .thankYouScreen{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main .thankYouScreen span{
+    display: block;
+    color: hsl(25, 97%, 53%);
+    background-color: #2C3740;
+    border-radius: 20px;
+    padding: 3% 4%;
+    margin: 10% 0;
+}
+
+main .thankYouScreen h2{
+    margin-bottom: 5%;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1440px){
+    main{
+        width: 30%;
+        padding: 2%;
+        border-radius: 30px;
+    }
+
+    main .ratingBox span{
+        height: auto;
+        width: auto;
+        padding: 6% 5%;
+        line-height: 0;
+        cursor: pointer;
+    }
+}
+
+@media(min-width:1700px){
+    main{
+        width: 22%;
+    }
+}
